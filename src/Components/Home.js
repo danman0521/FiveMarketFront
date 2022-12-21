@@ -33,7 +33,7 @@ const Home = () => {
   return (
 
 
-    <main className="  mt-5 md:mt-10 p-5  md:justify-center text-center    ">
+    <main className="  p-5  md:justify-center text-center border-4 border-white-500  ">
 
       <div className="   w-full">
 
@@ -45,7 +45,7 @@ const Home = () => {
         <div align="center">
           <img width={400} height={400}
 
-            src="https://res.cloudinary.com/ducsfn7np/image/upload/v1671233193/logo_escogido_mhm6xn.png"></img>
+            src="https://res.cloudinary.com/ducsfn7np/image/upload/v1671503894/LOGOFIVE_u3m0lf.png"></img>
         </div>
       </div>
       <div  
@@ -58,7 +58,7 @@ const Home = () => {
         </Link>
         </div>
 
-      <div className="border-4 border-red-500  bg-white rounded-lg mt-5  md:h-full">
+      <div className="">
         
         <div className="px-4 sm:flex sm:items-center sm:justify-between  sm:px-6 lg:px-8 xl:px-0">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">Shop by Category</h2>
@@ -80,13 +80,13 @@ const Home = () => {
                     className="relative flex h-80 w-56 flex-col overflow-hidden rounded-lg p-6 hover:opacity-75 xl:w-auto"
                   >
                     <span aria-hidden="true" className="absolute mt-2 inset-0">
-                      <img src={category.imagen} alt="" className="h-full rounded w-full object-cover object-center" />
+                      <img src={category.imagen} alt="" className="h-full rounded w-full object-cover object-center " />
                     </span>
                     <span
                       aria-hidden="true"
-                      className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-gray-800 opacity-50"
+                      className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-gray-800 opacity-50 "
                     />
-                    <span className="relative mt-auto text-center text-xl font-bold text-white">{category.nombre}</span>
+                    <span className="relative mt-auto text-center text-xl font-bold text-white icon-logo">{category.nombre}</span>
                   </a>
                 ))}
               </div>
@@ -137,7 +137,7 @@ const Home = () => {
                 <div className="mt-6">
                   <a
                     href={product.href}
-                    className="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 py-2 px-8 text-sm font-medium text-gray-900 hover:bg-gray-200"
+                    className="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 py-2 px-8 text-sm font-medium text-gray-900 hover:bg-gray-200 "
                   >
                     Add to bag<span className="sr-only">, {product.nombre}</span>
                   </a>

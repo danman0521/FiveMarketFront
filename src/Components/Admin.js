@@ -67,7 +67,6 @@ return (
             <main className=' flex-1 '>
                 <h1 className=" flex items-center justify-center  text-center bg-gradient-to-r  from-red-600 via-red-400 to-red-600 bg-clip-text font-display text-5xl tracking-tight text-transparent">
                     CATEGORIAS
-
                 </h1>
 
                 <table className="  flex items-bot justify-center  ">

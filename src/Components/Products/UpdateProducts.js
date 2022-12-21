@@ -5,12 +5,12 @@ import crud from '../../Conexiones/crud';
 import { useNavigate, useParams, } from 'react-router-dom';
 import swal from 'sweetalert';
 
-const UpdateProduct = () => {
+const UpdateProduct = (Product) => {
 
     const navigate = useNavigate();
 
     const { idProduct } = useParams();
-   //  console.log(idProduct);
+   //console.log(idProduct)
 
     const [product, setProduct] = useState({
         nombre: '',
@@ -19,10 +19,10 @@ const UpdateProduct = () => {
         precio: '',
         imagen: ''
     })
-
+    
     const loadProduct = async () => {
         const response = await crud.GET(`/api/product/${idProduct}`);
-        console.log(response);
+       // console.log(response);
         setProduct(response.product);
     }
     useEffect(() => {
@@ -30,8 +30,8 @@ const UpdateProduct = () => {
     }, []);
 
 
-    const {nombre, descripcion, stock, precio, imagen } = product;
-    console.log(nombre)
+    const {nombre, descripcion, stock, precio, imagen } = Product;
+    //console.log(product)
     const onChange = (e) => {
         setProduct({
             ...product,
@@ -49,7 +49,7 @@ const UpdateProduct = () => {
 
         //console.log(data);
         const response = await crud.PUT(`/api/product/${idProduct}`, data);
-        console.log(response);
+       // console.log(response);
         const mensage1 = "el producto se actualizo correctamente"
         swal({
             title: 'Informacion',
